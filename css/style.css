@@ -1,18 +1,8 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Autumn Leaves';
-    src: url('../fonts/autumn-leaves/Autumn\ Leaves\ new.ttf');
-}
-
-@font-face {
     font-family: 'Green Nature';
     src: url('../fonts/green-nature/GREEN\ NATURE.ttf');
-}
-
-@font-face {
-    font-family: 'Lady Nature';
-    src: url('../fonts/lady-nature/Lady\ Nature\ Font\ by\ 7NTypes.otf');
 }
 
 @font-face {
@@ -26,7 +16,6 @@
 }
 
 :root {
-    --color0: #deffc3;
     --color1: #acdf95;
     --color2: #79bf68;
     --color3: #479f3a;
@@ -133,11 +122,6 @@ main p {
     line-height: 2em;
 }
 
-main strong {
-    color: var(--color4);
-    font-weight: bold;
-}
-
 main a {
     text-decoration: none;
     font-weight: bold;
@@ -155,41 +139,11 @@ main img {
     width: 100%;
 }
 
-main img.small {
-    max-width: 350px;
-    display: block;
-    margin: auto;
-}
-
-div.video {
-    background-color: var(--color5);
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    position: relative;
-    padding-bottom: 56.7%;
-}
-
-div.video > iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
-
 aside {
     background-color: var(--color1);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, .281);
-}
-
-aside > h3 {
-    background-color: var(--color4);
-    color: white;
-    padding: 5px;
-    margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
 }
 
 aside > ul {
