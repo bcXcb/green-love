@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Autumn Leaves';
+    src: url('../fonts/autumn-leaves/Autumn\ Leaves\ new.ttf');
+}
+
+@font-face {
+    font-family: 'Green Nature';
+    src: url('../fonts/green-nature/GREEN\ NATURE.ttf');
+}
+
+@font-face {
+    font-family: 'Lady Nature';
+    src: url('../fonts/lady-nature/Lady\ Nature\ Font\ by\ 7NTypes.otf');
+}
+
+@font-face {
+    font-family: 'Nature Green';
+    src: url('../fonts/nature-green/Nature\ Green.ttf');
+}
+
+@font-face {
+    font-family: 'The Natures';
+    src: url('../fonts/the-natures/The\ Natures.ttf');
+}
+
+:root {
+    --color0: #deffc3;
+    --color1: #acdf95;
+    --color2: #79bf68;
+    --color3: #479f3a;
+    --color4: #157f0d;
+    --color5: #0a4606;
+
+    --default-font: 'The Natures';
+    --featured-font: 'Green Nature';
+    --android-font: 'Nature Green';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: var(--default-font);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--color2), var(--color4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-family: var(--featured-font);
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.267);
+    font-weight: bold;
+}
+
+header > p {
+    color: white;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.315);
+    font-family: var(--default-font);
+}
+
+nav {
+    background-color:  var(--color4);
+    padding: 10px;
+    box-shadow: 0px 7px 12px rgb(0, 0, 0, 0.363);
+}
+
+nav > a {
+    color: var(--color1);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--color3);
+    color: var(--color5);
+    border-radius: 5px;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h2 {
+    color: var(--color5);
+    font-family: var(--android-font);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+main h3 {
+    font-family: var(--android-font);
+    color: var(--color5);
+    font-size: 1em;
+    background-image: linear-gradient(to right, var(--color2), transparent);
+    text-indent: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--color4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color5);
+    background-color: var(--color1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--color4);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.small {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--color5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.7%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .281);
+}
+
+aside > h3 {
+    background-color: var(--color4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+footer {
+    background-color: var(--color5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color1);
+}
+
+.external-link::after {
+    content: '\00A0\00A0\1F517';
+}
