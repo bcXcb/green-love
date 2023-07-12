@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Essência Verde</title>
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <script src="js/script.js"></script>
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>Essência Verde</h1>
         <p>
             A natureza é a base da vida, a fonte da inspiração e o sustento do nosso planeta
         </p>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="#">Acervo</a></li>
+                <li><a href="#">Fale conosco</a></li>
+            </ul>
+        </menu>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Notícias</a>
-        <a href="#">Curiosidades</a>
-        <a href="#">Fale Conosco</a>
-    </nav>
     <main>
         <article>
             <h2>
