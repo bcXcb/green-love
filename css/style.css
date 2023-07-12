@@ -80,7 +80,7 @@ span#burger {
     text-align: center;
 }
 
-span#burger:hover {
+span#burger:active {
     cursor: pointer;
     background-color: var(--color5);
     color: white;
